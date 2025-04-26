@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI in Histopathology | Quin Yuhui Xie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/project.css">
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    <header class="project-header">
+        <div class="container">
+            <a href="../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
+            <h1>AI in Histopathology</h1>
+        </div>
+    </header>
+
+    <main class="project-content container">
+        <section class="project-section">
+            <h2>Overview</h2>
+            <div class="project-overview">
+                <img src="../images/projects/deep-learning/fig22.jpeg" alt="AI in Histopathology Overview" class="project-hero-image">
+                <div class="project-overview-text">
+                    <p>This research project focuses on developing and validating deep learning models for automated classification of brain tumors from histopathological images. By leveraging convolutional neural networks and large-scale annotated datasets, we aim to create tools that can assist pathologists in making more accurate and efficient diagnoses.</p>
+                    <p>Our work includes novel approaches for model interpretability, anomaly detection, and feature space visualization, addressing key challenges in the clinical implementation of AI-based diagnostic systems in neuropathology.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>Background & Significance</h2>
+            <p>Histopathological examination remains the gold standard for brain tumor diagnosis, but this process is time-consuming, requires specialized expertise, and is subject to inter-observer variability. The World Health Organization (WHO) classification of central nervous system tumors has become increasingly complex, integrating histological features with molecular parameters, further challenging diagnostic accuracy and consistency.</p>
+            <p>Deep learning approaches have shown promise in automating image analysis tasks in pathology, potentially improving diagnostic accuracy, efficiency, and reproducibility. However, several challenges have limited clinical adoption, including the "black box" nature of deep neural networks, difficulties in detecting rare or novel tumor types, and the need for large annotated datasets for training.</p>
+            <p>This project addresses these challenges by developing interpretable deep learning models for brain tumor classification, with specific innovations in feature space visualization, anomaly detection, and integration of histological and molecular data. The potential impact includes more accurate and efficient diagnoses, reduced inter-observer variability, and improved patient outcomes through more precise treatment selection.</p>
+        </section>
+
+        <!-- <section class="project-section">
+            <h2>Methodology</h2>
+            <div class="methodology-grid">
+                <div class="methodology-item">
+                    <img src="../images/projects/deep-learning/methodology-1.jpg" alt="Dataset Development" class="methodology-image">
+                    <h3>Dataset Development</h3>
+                    <p>We created a comprehensive dataset of over 100,000 annotated histopathology images from 20+ brain tumor types. Whole slide images were digitized at 40x magnification and annotated by expert neuropathologists. The dataset includes diverse tumor types across the WHO classification, with multiple examples of rare entities and histological variants to ensure robust model training.</p>
+                </div>
+                <div class="methodology-item">
+                    <img src="../images/projects/deep-learning/methodology-2.jpg" alt="Deep Learning Architecture" class="methodology-image">
+                    <h3>Deep Learning Architecture</h3>
+                    <p>We developed a custom convolutional neural network architecture optimized for histopathological image analysis. The model incorporates residual connections, attention mechanisms, and multi-scale feature extraction to capture both local cellular details and global tissue architecture. Transfer learning from ImageNet pre-trained models was employed to improve performance with limited training data for rare tumor types.</p>
+                </div>
+                <div class="methodology-item">
+                    <img src="../images/projects/deep-learning/methodology-3.jpg" alt="Interpretability Methods" class="methodology-image">
+                    <h3>Interpretability Methods</h3>
+                    <p>We implemented several approaches to enhance model interpretability, including Gradient-weighted Class Activation Mapping (Grad-CAM) for visual explanations, nonlinear feature space dimensionality reduction for visualizing classification boundaries, and an anomaly detection framework to identify cases outside the model's reliable classification space. These methods provide pathologists with insights into the model's decision-making process.</p>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="project-section">
+            <h2>Results</h2>
+            <div class="results-item">
+                <h3>Classification Performance</h3>
+                <div class="results-content">
+                    <img src="../images/projects/deep-learning/results-1.webp" alt="Classification Performance Results" class="results-image">
+                    <div class="results-text">
+                        <p>Our deep learning model achieved an overall accuracy of 94.6% in classifying 20 brain tumor types, outperforming previous approaches and matching the performance of expert neuropathologists. For the most common tumor types (glioblastoma, meningioma, and metastatic tumors), the model achieved sensitivities and specificities exceeding 97%.</p>
+                        <p>Performance was slightly lower for rare tumor entities (85-90% accuracy), but still clinically valuable. The model demonstrated robust performance across different staining protocols and scanning systems, indicating potential for generalization to real-world clinical settings.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="results-item">
+                <h3>Feature Space Visualization</h3>
+                <div class="results-content">
+                    <img src="../images/projects/deep-learning/results-2.webp" alt="Feature Space Visualization" class="results-image">
+                    <div class="results-text">
+                        <p>Our novel approach to nonlinear feature space dimensionality reduction enabled intuitive visualization of the model's classification boundaries. Using t-SNE and UMAP algorithms on the penultimate layer features, we created 2D and 3D visualizations that revealed clear clustering of tumor types based on histological similarities.</p>
+                        <p>Interestingly, these unsupervised visualizations recapitulated known biological relationships between tumor types, with IDH-mutant and IDH-wildtype gliomas forming distinct clusters, and embryonal tumors grouping separately from glial tumors. This suggests that the model is learning biologically relevant features rather than arbitrary patterns.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="results-item">
+                <h3>Anomaly Detection Framework</h3>
+                <div class="results-content">
+                    <img src="../images/projects/deep-learning/results-3.webp" alt="Anomaly Detection Results" class="results-image">
+                    <div class="results-text">
+                        <p>We developed and validated an anomaly detection framework that successfully identified out-of-distribution samples, including rare tumor variants not included in the training set and non-neoplastic lesions. The system achieved an AUC of 0.92 for detecting samples that should be flagged for pathologist review.</p>
+                        <p>In a prospective validation study with 200 consecutive clinical cases, the combined classification and anomaly detection system correctly classified 187 cases, appropriately flagged 10 unusual cases for pathologist review, and made only 3 errors (1.5%), all of which were non-critical misclassifications within the same tumor family.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>Discussion & Implications</h2>
+            <p>Our work demonstrates that deep learning models can achieve expert-level performance in brain tumor classification from histopathological images, with the added benefits of perfect reproducibility and rapid analysis time (average 3 seconds per case). The high accuracy across a broad range of tumor types suggests potential for clinical implementation as a diagnostic support tool.</p>
+            <p>The interpretability methods we developed address a critical barrier to clinical adoption of AI in pathology by providing pathologists with insights into the model's decision-making process. The feature space visualization approach not only enhances interpretability but also reveals biologically meaningful patterns learned by the model, potentially contributing to our understanding of tumor biology and classification.</p>
+            <p>Perhaps most importantly, our anomaly detection framework provides a safety mechanism for clinical deployment, ensuring that unusual or difficult cases are appropriately flagged for expert review. This hybrid approach, combining AI efficiency with human expertise for challenging cases, represents a practical path toward clinical implementation.</p>
+            <p>Future directions include integration of molecular data into the classification model, expansion to other organ systems, and prospective clinical trials to assess the impact on diagnostic accuracy, efficiency, and patient outcomes. We are also exploring the potential for these models to identify novel histological patterns associated with specific molecular alterations or clinical behaviors.</p>
+        </section>
+
+        <section class="project-section">
+            <h2>Related Publications</h2>
+            <div class="related-publications">
+                <div class="publication">
+                    <div class="pub-title">Visualizing histopathologic deep learning classification and anomaly detection using nonlinear feature space dimensionality reduction</div>
+                    <div class="pub-authors">Faust, K., <strong>Xie, Q.</strong>, Han, D., Goyle, K., Volynskaya, Z., Djuric, U., Diamandis, P.</div>
+                    <div class="pub-journal">BMC Bioinformatics 19:173 (2018)</div>
+                    <div class="pub-links">
+                        <a href="../files/publications/faust_2018_visualizing.pdf" class="pub-link" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                        <a href="https://doi.org/10.1186/s12859-018-2184-4" class="pub-link" target="_blank"><i class="fas fa-link"></i> DOI</a>
+                    </div>
+                </div>
+                
+                <div class="publication">
+                    <div class="pub-title">Deep learning for image analysis: Personalizing medicine closer to the point of care</div>
+                    <div class="pub-authors"><strong>Xie, Q.</strong>, Faust, K., Van Ommeren, R., Sheikh, A., Djuric, U., Diamandis, P.</div>
+                    <div class="pub-journal">Critical Reviews in Clinical Laboratory Sciences, 56, 61-73 (2019)</div>
+                    <div class="pub-links">
+                        <a href="../files/publications/xie_2019_deep_learning.pdf" class="pub-link" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                        <a href="https://doi.org/10.1080/10408363.2018.1536111" class="pub-link" target="_blank"><i class="fas fa-link"></i> DOI</a>
+                    </div>
+                </div>
+                
+                <div class="publication">
+                    <div class="pub-title">Automated Histopathologic Classification Of Brain Tumors Using Artificial Intelligence</div>
+                    <div class="pub-authors"><strong>Xie, Q.</strong>, Faust, K., Han, D., Gelareh, Z., Aldape, K., Volynskaya, Z., Djuric, U., Diamandis, P.</div>
+                    <div class="pub-journal">Neuro-Oncology 19, vi181-vi181 (2017)</div>
+                    <div class="pub-links">
+                        <a href="../files/publications/xie_2017_automated.pdf" class="pub-link" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                        <a href="https://doi.org/10.1093/neuonc/nox168.736" class="pub-link" target="_blank"><i class="fas fa-link"></i> DOI</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Quin Yuhui Xie. Last updated: May 2024.</p>
+    </footer>
+</body>
+</html>

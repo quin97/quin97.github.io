@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immune Responses in T1D Prevention | Quin Yuhui Xie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/project.css">
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    <header class="project-header">
+        <div class="container">
+            <a href="../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
+            <h1>Immune Responses in T1D Prevention</h1>
+        </div>
+    </header>
+
+    <main class="project-content container">
+        <section class="project-section">
+            <h2>Overview</h2>
+            <div class="project-overview">
+                <img src="../images/projects/t1d-prevention/infographics.svg" alt="T1D Prevention Project Overview" class="project-hero-image">
+                <div class="project-overview-text">
+                    <p>This research project focuses on identifying immune signatures that predict response to FDA-approve immunotherapy, Teplizumab, for Type 1 Diabetes (T1D) prevention. By analyzing immune responses to gut bacteria in individuals at high risk for T1D, we aim to develop biomarkers that can guide personalized treatment approaches.</p>
+                    <p>Our work has direct clinical applications in optimizing patient selection for targeted therapies, potentially improving outcomes in T1D prevention trials and informing the employment of immunomodulatory treatments for other autoimmune conditions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>Background & Significance</h2>
+            <p>Type 1 Diabetes (T1D) is an autoimmune disease characterized by T cell-mediated destruction of insulin-producing beta cells in the pancreas. Recent TN10 clinical trials have demonstrated that a single course of immunomodulatory therapy targeting T cells, Teplizumab, can delay disease onset in high-risk individuals. However, treatment response vary, and there are currently no predictors for which patients will benefit the most from such intervention.</p>
+            <p>Emerging evidence suggests that the gut microbiome plays a crucial role in shaping immune responses relevant to T1D pathogenesis. Alterations in gut microbial communities have been observed in individuals with T1D and those at high risk for the disease. However, the specific immune responses to gut bacteria that influence disease progression and treatment response remain poorly understood.</p>
+            <p>This project addresses a critical need in the field by investigating the relationship between immune responses to gut bacteria and clinical outcomes in the T1D prevention trial. The identification of predictive biomarkers could significantly improve patient selection for immunotherapy, potentially increasing efficacy through early risk identification. </p>
+        </section>
+
+        <section class="project-section">
+            <h2>Methodology</h2>
+            <div class="methodology-grid">
+                <div class="methodology-item">
+                    <figure>
+                        <img src="../images/projects/t1d-prevention/method1.svg" alt="Clinical Trial Analysis" class="methodology-image">
+                    </figure>
+                    <h3>Clinical Trial Analysis</h3>
+                    <p>We analyzed data from a Phase III trial of Teplizumab using Kaplan-Meier survival analysis with log-rank tests to assess treatment efficacy. Cox proportional hazards models were employed to calculate hazard ratios while adjusting for covariates. We implemented landmark analyses at key timepoints and used restricted mean survival time (RMST) to quantify absolute treatment benefit across the follow-up period of up to 5 years.</p>
+                </div>
+                <div class="methodology-item">
+                    <img src="../images/projects/t1d-prevention/method2.svg" alt="Immune Profiling" class="methodology-image">
+                    <h3>Immune Response Profiling</h3>
+                    <p>We developed a novel assay to measure immune responses to specific gut bacteria. Serum samples from trial participants were serially diluted to maximally capture the dynamic range and incubated with a panel of bacterial antigens, and antibody responses of three isotypes were measured using multiplex flow cytometry. Response index was quantified for each bacteria & isotype combination. </p>
+                </div>
+                <div class="methodology-item">
+                    <figure>
+                        <img src="../images/projects/t1d-prevention/method3.png" alt="Predictive Modeling" class="methodology-image">
+                        <figcaption class="image-credit"> Credit: Unknown.</figcaption>
+                    </figure>
+                    <h3>Predictive Modeling</h3>
+                    <p>We implemented boosted Cox models to identify immune markers predictive of treatment response. For longitudinal data, we employed Bayesian Joint Models for Longitudinal and Time-to-Event Data to account for individual-level variability. Model performance was evaluated using time-dependent AUC, AIC, and partial likelihood ratio tests. External validation utilized an independent cohort from an observational study.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>Results</h2>
+            <div class="results-item">
+                <h3>Immune Responses to Gut Bacteria Predict T1D Progression</h3>
+                <div class="results-content">
+                    <img src="../images/projects/t1d-prevention/Picture1.svg" alt="T1D Progression Results" class="results-image">
+                    <div class="results-text">
+                        <p>Our analysis revealed that immune responses to specific gut bacterial antigens were significantly associated with time to T1D diagnosis. Specifically, IgG2 antibody responses to Bifidobacterium longum were bimodal in distribution and strongly predictive of disease progression (p=0.011).</p>
+                        <p>Participants with high B. longum-IgG2 responses showed significantly greater benefit from Teplizumab treatment compared to those with low responses, with a hazard ratio of 0.18 [0.10, 0.33] versus 0.83 [0.47, 1.44] respectively. This biomarker remained predictive at both baseline and 6-month timepoints, suggesting its utility as a stable predictor of treatment response.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="results-item">
+                <h3>Genetic Risk and Immune Response Predict Treatment Efficacy</h3>
+                <div class="results-content">
+                    <img src="../images/projects/t1d-prevention/Picture2.svg" alt="Treatment Response Biomarkers" class="results-image">
+                    <div class="results-text">
+                        <p>We identified significant interactions between HLA-DR4 haplotype and immune responses to gut bacteria that influenced both disease progression and treatment response. In HLA-DR4+ individuals, specific bacterial immune responses were strongly associated with T1D progression risk (interaction p=0.001).</p>
+                        <p>Treatment efficacy varied substantially based on this interaction, with HLA-DR4+ individuals showing differential response patterns depending on their baseline immune profiles. This finding suggests that genetic factors and immune responses together shape the biological response to immunomodulatory therapy in pre-diabetic individuals.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="results-item">
+                <h3>Improved Predictive Models for T1D Diagnosis</h3>
+                <div class="results-content">
+                    <img src="../images/projects/t1d-prevention/Picture3.svg" alt="Mechanistic Insights" class="results-image">
+                    <div class="results-text">
+                        <p>Using machine learning selected feature, we developed predictive models incorporating immune responses to gut bacteria that significantly improved prediction of T1D diagnosis compared to traditional markers alone. </p>
+                        <p>Longitudinal analysis using joint models for repeated measures and time-to-event data confirmed that these immune signatures provided independent predictive value beyond established clinical markers such as C-peptide levels. These findings suggest that bacterial immune signatures could enhance patient selection for future T1D prevention trials.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>Discussion & Implications</h2>
+            <p>Our findings demonstrate that immune responses to gut bacteria are strongly associated with T1D progression and treatment response, providing novel insights into the pathogenesis of T1D and the mechanisms of action of immunomodulatory therapies. The identification of specific bacterial species and immune response patterns that predict treatment outcomes has significant implications for personalized medicine approaches in T1D prevention.</p>
+            <p>The predictive biomarker signature we developed could potentially be used to select patients most likely to benefit from Teplizumab treatment, improving the risk-benefit ratio and cost-effectiveness of this intervention. This is particularly important given the recent FDA approval of Teplizumab for delaying T1D in high-risk individuals and its significant cost ($2.9B acquisition of the developing company).</p>
+            <p>Furthermore, our mechanistic insights suggest that modulation of immune responses to gut bacteria may be a key component of successful immunotherapy in T1D. This opens up new avenues for therapeutic development, including combination approaches targeting both T cells and the gut microbiome.</p>
+            <p>Future directions include validation of our predictive biomarker signature in prospective clinical trials, development of a standardized assay for clinical implementation, and investigation of microbiome-targeted interventions as adjuncts to immunotherapy in T1D prevention.</p>
+        </section>
+
+        <section class="project-section">
+            <h2>Related Publications</h2>
+            <div class="related-publications">
+                <div class="publication">
+                    <div class="pub-title">Immune responses to gut bacteria associated with time to diagnosis and clinical response to T-cell directed therapy for type 1 diabetes prevention</div>
+                    <div class="pub-authors"><strong>Xie, Q.Y.</strong>, Oh, S., Wong, W., Yau, C., Herold, K.C., Danska, J.S.</div>
+                    <div class="pub-journal">Science Translational Medicine 15:719 (2023)</div>
+                    <div class="pub-links">
+                        <a href="../files/publications/xie_2023_sci_transl_med.pdf" class="pub-link" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                        <a href="https://doi.org/10.1126/scitranslmed.abc1234" class="pub-link" target="_blank"><i class="fas fa-link"></i> DOI</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Quin Yuhui Xie. Last updated: May 2024.</p>
+    </footer>
+</body>
+</html>

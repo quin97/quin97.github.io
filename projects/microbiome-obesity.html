@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gut Microbiome in Adolescent Obesity | Quin Yuhui Xie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/project.css">
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    <header class="project-header">
+        <div class="container">
+            <a href="../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
+            <h1>Gut Microbiome in Adolescent Obesity</h1>
+        </div>
+    </header>
+
+    <main class="project-content container">
+        <section class="project-section">
+            <h2>Overview</h2>
+            <div class="project-overview">
+                <img src="../images/projects/microbiome-obesity/graphic_abstract.png" alt="Microbiome and Obesity Project Overview" class="project-hero-image">
+                <div class="project-overview-text">
+                    <p>This research project investigates the complex relationships among gut microbiota, metabolic dysfunction, and inflammation in adolescents with obesity. Using a comprehensive multi-omic approach, we characterized the gut microbiome in an adolescent obesity cohort, employing fecal DNA sequencing with absolute bacterial quantitation alongside detailed immune and metabolic profiling.</p>
+                    <p>Our findings reveal striking multi-log order variations in absolute bacterial biomass that correlate with host metabolic health, bacterial taxonomic composition, and inflammatory markers. Importantly, we identified sex-dependent variations in these relationships, providing new insights into the early origins of metabolic disease and potential targets for intervention before the onset of type 2 diabetes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>Background & Significance</h2>
+            <p>Childhood obesity represents a major public health challenge, strongly associated with persistent obesity into adulthood, development of type 2 diabetes (T2D), and numerous metabolic complications. While genetic factors contribute to obesity risk, mounting evidence suggests that the gut microbiome plays a crucial role as a modifier of host metabolic function, with altered bacterial composition linked to various disease states.</p>
+            <p>Despite the established connection between gut microbiota and metabolic health in adults, few studies have investigated these relationships in adolescents, where these connections likely originate. Most previous research has focused on relative bacterial abundance rather than absolute quantitation, potentially missing important aspects of the microbiome's influence on host health.</p>
+            <p>This project addresses critical gaps in our understanding by examining not only the composition but also the absolute biomass of gut bacteria in adolescents with obesity. By integrating microbiome data with detailed metabolic and inflammatory profiles, we aim to identify early biomarkers of metabolic dysfunction before the onset of T2D. The sex-specific differences we uncovered highlight the importance of considering biological sex in microbiome research and personalized intervention strategies for adolescents with obesity.</p>
+        </section>
+
+        <section class="project-section">
+            <h2>Methodology</h2>
+            <div class="methodology-grid">
+                <div class="methodology-item">
+                    <img src="../images/projects/microbiome-obesity/method1.jpg" alt="16S rRNA Sequencing" class="methodology-image">
+                    <h3>16S rRNA Sequencing</h3>
+                    <p>We performed 16S rRNA gene sequencing on fecal samples from 50+ adolescents with obesity and normal-weight controls. Bacterial DNA was extracted using validated protocols, and the V3-V4 region was amplified and sequenced on the Illumina MiSeq platform. Sequence data was processed using DADA2, and taxonomic assignment was performed using the SILVA database.</p>
+                </div>
+                <div class="methodology-item">
+                    <img src="../images/projects/microbiome-obesity/method2.jpg" alt="CyTOF Analysis" class="methodology-image">
+                    <h3>Mass Cytometry (CyTOF)</h3>
+                    <p>We conducted 30+ parameter CyTOF analysis on peripheral blood mononuclear cells (PBMCs) from study participants. This high-dimensional approach allowed us to comprehensively profile major immune cell populations and their activation states. Data was analyzed using dimensionality reduction techniques including UMAP and FlowSOM for cell population identification.</p>
+                </div>
+                <div class="methodology-item">
+                    <img src="../images/projects/microbiome-obesity/method3.svg" alt="Structural equation modeling" class="methodology-image">
+                    <h3>Structural equation modeling</h3>
+                    <p> We used exploratory structural equation modeling (ESEM) to model the relationship between three latent variables, gut microbiota, variation in metabolic parameters, and inflammation, in a structured way. The model finds the optimal solution to explain covariance between measurements when the factor structure is unknown, as is the case for all three latent variables.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>Results</h2>
+            <div class="results-item">
+                <h3>Altered Gut Microbiota Composition in Adolescents with Obesity</h3>
+                <div class="results-content">
+                    <img src="../images/projects/microbiome-obesity/Picture1.svg" alt="Microbiome Composition Results" class="results-image">
+                    <div class="results-text">
+                        <p>Our analysis revealed striking multi-log order variations in absolute bacterial biomass among adolescents with obesity. This variation was strongly dependent on host environment and, along with participant sex, are the top factors explaining a significant and non-redundant fraction of variation in microbiome composition.</p>
+                        <p>Participants with higher bacterial biomass displayed a healthier metabolic phenotype characterized by higher gut microbiome diversity and lower abundance of taxa associated with inflammation and pathogenicity, such as <em>Escherichia coli</em>. These findings suggest that absolute bacterial biomass, not just relative composition, may be an important indicator of gut and metabolic health in adolescents.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="results-item">
+                <h3>Immune Signatures Associated with Metabolic Dysfunction</h3>
+                <div class="results-content">
+                    <img src="../images/projects/microbiome-obesity/Picture2.svg" alt="Immune Signatures Results" class="results-image">
+                    <div class="results-text">
+                        <p>CyTOF immune profiling of 34 cell surface markers on PBMC from individuals of the low and high biomass groups revealed higher frequencies of CD45loCD66b+ cells. These cells are CD14loCD16hi and express low levels of HLA-DR, CD11b and CD11c, corresponding to surface phenotypes of low-density (LD) neutrophils, activated by exposure to cytokines during chronic inflammation, such as cancer and obesity. </p>
+                        <p>Using ELISA, we validate the signature of neutrophil populations that strongly predicted insulin resistance and dyslipidemia in our cohort, dependent on sex.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="results-item">
+                <h3>Microbiome-Immune Interactions</h3>
+                <div class="results-content">
+                    <img src="../images/projects/microbiome-obesity/Picture3.svg" alt="Microbiome-Immune Interactions" class="results-image">
+                    <div class="results-text">
+                        <p>Integration of microbiome and immune data revealed significant correlations between specific bacterial taxa and immune cell populations. Notably, Escherichia abundance was correlated with pro-inflammatory responses in the gut in a sex-dependent manner and inversely correlated with bacterial load. </p>
+                        <p>Network analysis identified a module of 11 immune cell populations and 7 bacterial genera that collectively explained 42% of the variance in HOMA-IR scores, suggesting a coordinated microbiome-immune axis in metabolic regulation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>Discussion & Implications</h2>
+            <p>Our results suggest that intestinal bacteria biomass is associated with gut microbiome composition, stool consistency and metabolic status in adolescents with obesity. Overall, high fecal biomass individuals displayed healthier intestinal, metabolic and inflammatory parameters, 
+                while lower bacteria biomass was associated with greater metabolic dysregulation and elevated systemic neutrophil activity in male adolescents with obesity. These observations highlight the importance of additional investigations of the role of biological sex in regulating metabolism and immune responses in adolescence.</p>
+            <p>While this study incorporated microbiome and immune markers to identify young individuals at higher risk for metabolic complications, future works are needed to establish causality through longitudinal studies, understand mechanisms underlying these associations in mouse models, and design microbiome-targeted interventions in adolescents with obesity. </p>
+        </section>
+
+        <section class="project-section">
+            <h2>Related Publications</h2>
+            <div class="related-publications">
+                <div class="publication">
+                    <div class="pub-title">Metabolic dysfunction associated with alterations in gut microbiota in adolescents with obesity</div>
+                    <div class="pub-authors"><strong>Xie, Q.Y.</strong>†, Granto, A.†, Wong, W., Yau, C., Noseworthy, R., Chen, T., Gianetto-Hill, C., Allen-Vercoe, E., Guidos, C.J., Hamilton, J.K., Danska, J.S.</div>
+                    <div class="pub-journal">Diabetes. db240866 (2025)</div>
+                    <div class="pub-links">
+                        <a href="../files/publications/xie_2025_diabetes.pdf" class="pub-link" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                        <a href="https://doi.org/10.2337/db24-0866" class="pub-link" target="_blank"><i class="fas fa-link"></i> DOI</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Quin Yuhui Xie. Last updated: May 2024.</p>
+    </footer>
+</body>
+</html>
